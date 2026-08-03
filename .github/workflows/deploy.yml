@@ -36,7 +36,7 @@ jobs:
         working-directory: frontend
         run: npm run build
 
-          test-ssh:
+  test-ssh:
     needs: build
     runs-on: ubuntu-latest
 
