@@ -46,7 +46,7 @@ jobs:
           source: "backend/target/StudyStack-1.1.0.jar"
           target: "/home/ec2-user/studystack/backend/app/"
 
-              - name: Restart Backend
+      - name: Restart Backend
         uses: appleboy/ssh-action@v1.2.0
         with:
           host: ${{ secrets.EC2_HOST }}
@@ -56,4 +56,4 @@ jobs:
             sudo systemctl restart studystack
             sudo systemctl status studystack --no-pager  
 
-            
+
