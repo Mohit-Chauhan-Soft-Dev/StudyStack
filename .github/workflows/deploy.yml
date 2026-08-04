@@ -56,6 +56,6 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
             sudo systemctl restart studystack
-            sudo systemctl status studystack --no-pager  
-
-
+            sleep 10
+            sudo systemctl status studystack --no-pager
+            curl http://localhost:8080/public/users/count
