@@ -120,7 +120,7 @@ public class AuthController {
 
         return ResponseEntity
                 .status(HttpStatus.OK)
-                .body("Test API is called from auth controller !!");
+                .body("Test API is called from auth controller CI/CD !!");
 
     }
 
