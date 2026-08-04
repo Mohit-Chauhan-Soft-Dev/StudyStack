@@ -56,6 +56,17 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
             sudo systemctl restart studystack
-            sleep 10
+
+            echo "Waiting for backend to start..."
+
+            for i in {1..30}; do
+              if curl -fs http://localhost:8080/api/public/users/count >/dev/null; then
+                echo "Backend is ready!"
+                break
+              fi
+              sleep 2
+            done
+
             sudo systemctl status studystack --no-pager
-            curl http://localhost:8080/public/users/count
+
+            curl http://localhost:8080/api/public/users/count
