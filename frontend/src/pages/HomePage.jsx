@@ -98,7 +98,7 @@ export default function HomePage() {
                   mb: 2.5,
                 }}
               >
-                Study smarter with notes that actually get you results.
+                Study smarter with notes that actually get you result.
               </Typography>
               <Typography variant="h6" sx={{ fontWeight: 400, color: 'text.secondary', mb: 4, maxWidth: 560 }}>
                 StudyStack is a marketplace of high-quality, exam-focused notes —
