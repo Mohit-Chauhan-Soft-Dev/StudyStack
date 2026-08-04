@@ -90,5 +90,5 @@ jobs:
           script: |
             sudo rm -rf /usr/share/nginx/html/*
             sudo cp -r /home/ec2-user/studystack/frontend/dist/* /usr/share/nginx/html/
-            sudo systemctl reload nginx
+            sudo systemctl restart nginx
           
