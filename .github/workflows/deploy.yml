@@ -69,4 +69,4 @@ jobs:
 
             sudo systemctl status studystack --no-pager
 
-            curl http://localhost:8080/api/public/users/count
+            curl http://localhost:8080/public/users/count
