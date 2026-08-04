@@ -159,7 +159,7 @@ export default function HomePage() {
               >
                 <Stack spacing={2}>
                   {[
-                    { title: 'Organic Chemistry — Full Notes', price: '₹149', tag: 'Bestseller' },
+                    { title: 'Organic Chemistry — Full Notes', price: '₹199', tag: 'Bestseller' },
                     { title: 'Data Structures & Algorithms', price: '₹199', tag: 'New' },
                     { title: 'Microeconomics — Semester 1', price: '₹99', tag: 'Popular' },
                   ].map((item) => (
